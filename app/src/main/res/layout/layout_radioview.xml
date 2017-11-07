@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"
+        android:orientation="vertical">
+
+        <com.example.liyo.testdemo.view.BloodOxygenView
+            android:layout_width="760px"
+            android:layout_height="780px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:text="血氧"
+                android:textColor="@color/color_light" />
+
+            <ProgressBar style="@style/pb_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginBottom="120px"
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:text="血氧"
+                android:textSize="40px" />
+            <TextView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="40px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80px"
+                android:text="%"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="20px"
+                android:text="脉率"
+                android:textSize="40px" />
+            <TextView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:text="128"
+                android:textSize="40px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bpm"
+                android:textSize="40px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
